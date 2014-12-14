@@ -1,0 +1,88 @@
+body {
+    background: grey;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8cm;
+    font-family: "Helvetica", sans-serif;
+}
+
+#tool {
+    margin: .4em;
+}
+
+.elem, #navigation button {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 5px 0 5px 0;
+
+    font: 1em/1.2em "Monaco", "Menlo", monospace;
+    color: white;
+    background: black;
+}
+
+.label {
+    margin: 5px 0 5px 0;
+
+    font: bold .4em/1em "Helvetica", sans-serif;
+    color: white;
+    vertical-align: middle;
+}
+
+#secret, #password {
+    color: silver;
+}
+
+#message {
+    height: 6em;
+}
+
+#action {
+    text-align: center;
+    cursor: pointer;
+    height: 3em;
+    line-height: 3em;
+    vertical-align: center;
+    font-size: 1em;
+}
+
+#action:focus, #action:hover, #navigation button:focus, #navigation button:hover {
+    background: orange;
+}
+
+#action:active {
+    background: red;
+}
+
+#loading, #error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    color: white;
+    text-align: center;
+}
+
+#error {
+    background: rgba(255,0,0,.7);
+}
+
+#navigation button {
+    float: left;
+    width: 45%;
+    margin-right: .5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+#goPost {
+    position: absolute;
+    right: 0;
+}
+
+#navigation + div {
+    clear: both;
+}
